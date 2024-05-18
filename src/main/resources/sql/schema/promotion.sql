@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS promotion (
     start_date TIMESTAMP NOT NULL,
     end_date TIMESTAMP NOT NULL,
     discount_amount DECIMAL(10,2)
-    product_skus VARCHAR(255) NOT NULL DEFAULT '',
+    product_barcode VARCHAR(255) NOT NULL DEFAULT '',
     min_quantity INT,
     free_quantity INT
 );
