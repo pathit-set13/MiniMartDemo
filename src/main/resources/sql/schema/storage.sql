@@ -1,4 +1,4 @@
-CREATE TABLE storage (
+CREATE TABLE IF NOT EXISTS storage (
     itemId SERIAL PRIMARY KEY,
     barcode VARCHAR(255) UNIQUE NOT NULL,
     product_name VARCHAR(255) UNIQUE NOT NULL,

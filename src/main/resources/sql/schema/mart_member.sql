@@ -1,4 +1,4 @@
-CREATE TABLE mart_members (
+CREATE TABLE IF NOT EXISTS mart_member (
     memberId SERIAL PRIMARY KEY,
     firstName VARCHAR(255) NOT NULL,
     lastName VARCHAR(255) NOT NULL,
