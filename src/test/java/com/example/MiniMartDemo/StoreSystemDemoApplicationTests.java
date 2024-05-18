@@ -1,4 +1,4 @@
-package com.example.StoreSystemDemo;
+package com.example.MiniMartDemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

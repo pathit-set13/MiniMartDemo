@@ -1,4 +1,4 @@
-package com.example.StoreSystemDemo;
+package com.example.MiniMartDemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

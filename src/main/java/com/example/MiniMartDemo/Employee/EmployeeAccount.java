@@ -1,4 +1,4 @@
-package com.example.StoreSystemDemo.Employee;
+package com.example.MiniMartDemo.Employee;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
