@@ -1,0 +1,2 @@
+INSERT INTO employee_account (username, password, role) VALUES ('admin', 'admin123', 'ADMIN') ON CONFLICT DO NOTHING;
+INSERT INTO employee_account (username, password, role) VALUES (, 'password111', 'STAFF') ON CONFLICT DO NOTHING;
