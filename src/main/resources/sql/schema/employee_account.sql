@@ -1,34 +1,25 @@
 CREATE TABLE IF NOT EXISTS employee_account (
-    employee_id SERIAL PRIMARY KEY,
-    username VARCHAR(30) UNIQUE NOT NULL DEFAULT employee_id,
+    employee_id TEXT PRIMARY KEY DEFAULT generate_employee_id(),
+    username VARCHAR(50) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
-    role VARCHAR(255) NOT NULL
+    role VARCHAR(50) NOT NULL
 );
 
 -- FOR EMPLOYEE ID'S FORMAT.
-CREATE TABLE Sequence (
-    seq_name VARCHAR(50) PRIMARY KEY,
-    seq_value BIGINT NOT NULL
-);
+CREATE SEQUENCE employee_id_seq
+  START WITH 1
+  INCREMENT BY 1
+  MINVALUE 1
+  MAXVALUE 9999
+  CYCLE;
 
-INSERT INTO Sequence (seq_name, seq_value) VALUES ('employeeID_seq', 1);
-
-DELIMITER $$
-
-CREATE TRIGGER before_insert_employee
-BEFORE INSERT ON employee_account
-
-FOR EACH ROW
+CREATE OR REPLACE FUNCTION generate_employee_id()
+RETURNS TEXT AS $$
 BEGIN
-    DECLARE new_id VARCHAR(20);
+  RETURN 'EM' || LPAD(nextval('employee_id_seq')::TEXT, 4, '0');
+END;
+$$ LANGUAGE plpgsql;
 
-    UPDATE Sequence SET seq_value = seq_value + 1 WHERE seq_name = 'employeeID_seq';
 
-    SELECT CONCAT('EM', LPAD(seq_value, 4, '0')) INTO new_id
-    FROM Sequence WHERE seq_name = 'employeeID_seq';
 
-    SET NEW.id = new_id;
-END $$
-
-DELIMITER ;
 
