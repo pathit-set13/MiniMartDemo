@@ -1,0 +1,3 @@
+INSERT INTO mart_member (firstName, lastName, phone_number, member_tier) VALUES ('Chutima', 'Sasi', '0123456789', 'Gold')ON CONFLICT DO NOTHING;
+INSERT INTO mart_member (firstName, lastName, phone_number, member_tier) VALUES ('Somchai', 'Panama', '0987654321', 'Silver')ON CONFLICT DO NOTHING;
+INSERT INTO mart_member (firstName, lastName, phone_number, member_tier) VALUES ('Kanda', 'Wanna', '0897776541', 'Platinum')ON CONFLICT DO NOTHING;
