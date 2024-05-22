@@ -33,3 +33,17 @@ INSERT INTO storage (barcode, product_name, price, quantity, unit, description)
     VALUES ('004849654670', 'LION SODA 500ml.', 15.00, 99, 'bottles', '-');
 INSERT INTO storage (barcode, product_name, price, quantity, unit, description)
     VALUES ('004849654670', 'LION SODA 6x500ml.', 84.00, 99, 'packs', '6 pcs/pack');
+
+--Snacks
+INSERT INTO storage (barcode, product_name, price, quantity, unit, description)
+    VALUES ('564821387401', 'ANO Potato Chip Original 84g.', 20.00, 80, 'pcs', '-');
+INSERT INTO storage (barcode, product_name, price, quantity, unit, description)
+    VALUES ('564821387402', 'ANO Potato Chip Malah 84g.', 20.00, 67, 'pcs', '-');
+INSERT INTO storage (barcode, product_name, price, quantity, unit, description)
+    VALUES ('455682648565', 'MN Potato Chip Nori 76g.', 20.00, 56, 'pcs', '-');
+
+--Instance Foods
+INSERT INTO storage (barcode, product_name, price, quantity, unit, description)
+    VALUES ('111155789630', 'PAPA Cup PorkSoup Noddle 50g.', 17.00, 24, 'cups', '-');
+INSERT INTO storage (barcode, product_name, price, quantity, unit, description)
+    VALUES ('111155789730', 'PAPA Cup TomYum Noddle 50g.', 17.00, 37, 'cups', '-');
