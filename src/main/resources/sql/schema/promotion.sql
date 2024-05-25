@@ -5,8 +5,8 @@ CREATE TABLE IF NOT EXISTS promotion (
     description TEXT,
     start_date TIMESTAMP NOT NULL,
     end_date TIMESTAMP NOT NULL,
-    discount_amount DECIMAL(10,2)
     product_barcode VARCHAR(255) NOT NULL DEFAULT '',
+    discount_amount DECIMAL(10,2)
     min_spend DECIMAL(10,2),
     min_quantity INT,
     free_quantity INT
