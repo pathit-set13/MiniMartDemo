@@ -1,2 +1,2 @@
-INSERT INTO promotion (promoCode, name, description, start_date, end_date, discount_amount, product_barcode, min_quantity, free_quantity)
-    VALUES ('HOTSUMMER20', '')
+INSERT INTO promotion (promoCode, name, description, start_date, end_date, discount_amount, min_quantity, free_quantity)
+VALUES ('HOTSUMMERTWENTY', 'Discount 20 THB. for Beverages', 'Discount 20 THB. for Beverage total price.', '2024-04-01', '2024-06-30', 20.00, 1)ON CONFLICT (code) DO NOTHING;
