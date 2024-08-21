@@ -1,4 +1,4 @@
-package com.example.MiniMartDemo.Employee;
+package com.example.StoreSystemDemo.Employee;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
